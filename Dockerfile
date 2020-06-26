@@ -6,7 +6,7 @@ COPY gradle /app/gradle
 RUN ./gradlew build; exit 0
 
 COPY src /app/src
-#RUN ./gradlew bootJar -x integrationTest
+RUN ./gradlew bootJar # -x integrationTest
 
 
 FROM openjdk:14
