@@ -16,8 +16,8 @@ jobs:
         
       - uses: jerray/publish-docker-action@master
         with:
-          username: ${{ secrets.GCSALE_DOCKER_REGISTRY_USERNAME }}
-          password: ${{ secrets.GCSALE_DOCKER_REGISTRY_TOKEN }}
+          username: ${{ secrets.DOCKER_REGISTRY_USERNAME }}
+          password: ${{ secrets.WORKFLOW_SECRET }}
           registry: docker.pkg.github.com
           repository: check-project/project-image
           auto_tag: true
