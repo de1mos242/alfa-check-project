@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.DOCKER_REGISTRY_USERNAME }}
           password: ${{ secrets.WORKFLOW_SECRET }}
           registry: docker.pkg.github.com
-          repository: check-project/project-image
+          repository: de1m0s242/check-project/project-image
           auto_tag: true
